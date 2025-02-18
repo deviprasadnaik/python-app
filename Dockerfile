@@ -10,6 +10,6 @@ RUN pip install pipenv && \
   apt-get autoremove -y && \
   pip uninstall pipenv -y
 
-COPY . .
+COPY app.py requirements.txt .
 
 CMD ["python", "app.py"]
